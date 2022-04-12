@@ -1,0 +1,15 @@
+C:\Users\DUNG\source\repos\nonamegame\nonamegame\bin\Debug\nonamegame.exe.config
+C:\Users\DUNG\source\repos\nonamegame\nonamegame\bin\Debug\nonamegame.exe
+C:\Users\DUNG\source\repos\nonamegame\nonamegame\bin\Debug\nonamegame.pdb
+C:\Users\DUNG\source\repos\nonamegame\nonamegame\obj\Debug\nonamegame.csproj.AssemblyReference.cache
+C:\Users\DUNG\source\repos\nonamegame\nonamegame\obj\Debug\nonamegame.csproj.SuggestedBindingRedirects.cache
+C:\Users\DUNG\source\repos\nonamegame\nonamegame\obj\Debug\nonamegame.Form1.resources
+C:\Users\DUNG\source\repos\nonamegame\nonamegame\obj\Debug\nonamegame.Properties.Resources.resources
+C:\Users\DUNG\source\repos\nonamegame\nonamegame\obj\Debug\nonamegame.csproj.GenerateResource.cache
+C:\Users\DUNG\source\repos\nonamegame\nonamegame\obj\Debug\nonamegame.csproj.CoreCompileInputs.cache
+C:\Users\DUNG\source\repos\nonamegame\nonamegame\obj\Debug\nonamegame.exe
+C:\Users\DUNG\source\repos\nonamegame\nonamegame\obj\Debug\nonamegame.pdb
+C:\Users\DUNG\source\repos\nonamegame\nonamegame\bin\Debug\nonamegame.exe.manifest
+C:\Users\DUNG\source\repos\nonamegame\nonamegame\bin\Debug\nonamegame.application
+C:\Users\DUNG\source\repos\nonamegame\nonamegame\obj\Debug\nonamegame.exe.manifest
+C:\Users\DUNG\source\repos\nonamegame\nonamegame\obj\Debug\nonamegame.application
