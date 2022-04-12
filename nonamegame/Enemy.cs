@@ -12,12 +12,11 @@ namespace nonamegame
     internal class Enemy
     {
         public bool Out = false, Stop = false;
-        public int enemyWidth = 60, enemyHeight = 60;
-        public double x, xx, y, yy, z, zz, zzz, zzzz, zzzzz, plusspeed, angelX, angelY;
+        public int enemyWidth = 50, enemyHeight = 50;
+        public double x, xx, y, yy, z, zz, zzz, zzzz, zzzzz, plusspeed, angelX, angelY, radX = 40, radY = 40;
         public int Xpos, Ypos;
-        public int targetX = -2, targetY = -1, radX = 10, radY = 10;
+        public int targetX = -2, targetY = -1, time = 0;
         public Brush brush;
-        public Color color;
         public double tankXpos { get; set; }
         public double tankYpos { get; set; }
         public double randomX { get; set; }

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.SCORE_label = new System.Windows.Forms.Label();
             this.SKILL1_label = new System.Windows.Forms.Label();
             this.SKILL2_label = new System.Windows.Forms.Label();
@@ -35,6 +36,11 @@
             this.ENERGY_label = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.SETTINGS_panel = new System.Windows.Forms.Panel();
+            this.label24 = new System.Windows.Forms.Label();
+            this.label23 = new System.Windows.Forms.Label();
+            this.label22 = new System.Windows.Forms.Label();
+            this.h_textBox = new System.Windows.Forms.TextBox();
+            this.g_textBox = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
@@ -43,8 +49,6 @@
             this.label5 = new System.Windows.Forms.Label();
             this.a_comboBox = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.b_checkBox = new System.Windows.Forms.CheckBox();
-            this.a_checkBox = new System.Windows.Forms.CheckBox();
             this.c_textBox = new System.Windows.Forms.TextBox();
             this.d_textBox = new System.Windows.Forms.TextBox();
             this.e_textBox = new System.Windows.Forms.TextBox();
@@ -64,18 +68,26 @@
             this.POSITION_label = new System.Windows.Forms.Label();
             this.BACKGROUND_picturebox = new System.Windows.Forms.PictureBox();
             this.CONTROL_panel = new System.Windows.Forms.Panel();
+            this.label25 = new System.Windows.Forms.Label();
+            this.label21 = new System.Windows.Forms.Label();
+            this.label20 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.label27 = new System.Windows.Forms.Label();
-            this.label20 = new System.Windows.Forms.Label();
-            this.label21 = new System.Windows.Forms.Label();
+            this.a_pictureBox = new System.Windows.Forms.PictureBox();
+            this.c_pictureBox = new System.Windows.Forms.PictureBox();
+            this.b_pictureBox = new System.Windows.Forms.PictureBox();
+            this.label26 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SETTINGS_panel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.BACKGROUND_picturebox)).BeginInit();
             this.CONTROL_panel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.a_pictureBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.c_pictureBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.b_pictureBox)).BeginInit();
             this.SuspendLayout();
             // 
             // SCORE_label
@@ -106,7 +118,7 @@
             this.SKILL2_label.AutoSize = true;
             this.SKILL2_label.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.SKILL2_label.Font = new System.Drawing.Font("Showcard Gothic", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SKILL2_label.Location = new System.Drawing.Point(0, 895);
+            this.SKILL2_label.Location = new System.Drawing.Point(0, 888);
             this.SKILL2_label.Name = "SKILL2_label";
             this.SKILL2_label.Size = new System.Drawing.Size(271, 33);
             this.SKILL2_label.TabIndex = 5;
@@ -115,8 +127,9 @@
             // SKILL3_label
             // 
             this.SKILL3_label.AutoSize = true;
+            this.SKILL3_label.BackColor = System.Drawing.Color.White;
             this.SKILL3_label.Font = new System.Drawing.Font("Showcard Gothic", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SKILL3_label.Location = new System.Drawing.Point(-1, 862);
+            this.SKILL3_label.Location = new System.Drawing.Point(1, 850);
             this.SKILL3_label.Name = "SKILL3_label";
             this.SKILL3_label.Size = new System.Drawing.Size(232, 33);
             this.SKILL3_label.TabIndex = 6;
@@ -148,6 +161,11 @@
             // 
             // SETTINGS_panel
             // 
+            this.SETTINGS_panel.Controls.Add(this.label24);
+            this.SETTINGS_panel.Controls.Add(this.label23);
+            this.SETTINGS_panel.Controls.Add(this.label22);
+            this.SETTINGS_panel.Controls.Add(this.h_textBox);
+            this.SETTINGS_panel.Controls.Add(this.g_textBox);
             this.SETTINGS_panel.Controls.Add(this.label14);
             this.SETTINGS_panel.Controls.Add(this.label10);
             this.SETTINGS_panel.Controls.Add(this.label13);
@@ -156,8 +174,6 @@
             this.SETTINGS_panel.Controls.Add(this.label5);
             this.SETTINGS_panel.Controls.Add(this.a_comboBox);
             this.SETTINGS_panel.Controls.Add(this.label4);
-            this.SETTINGS_panel.Controls.Add(this.b_checkBox);
-            this.SETTINGS_panel.Controls.Add(this.a_checkBox);
             this.SETTINGS_panel.Controls.Add(this.c_textBox);
             this.SETTINGS_panel.Controls.Add(this.d_textBox);
             this.SETTINGS_panel.Controls.Add(this.e_textBox);
@@ -173,8 +189,52 @@
             this.SETTINGS_panel.Controls.Add(this.a_textBox);
             this.SETTINGS_panel.Location = new System.Drawing.Point(12, 12);
             this.SETTINGS_panel.Name = "SETTINGS_panel";
-            this.SETTINGS_panel.Size = new System.Drawing.Size(525, 392);
+            this.SETTINGS_panel.Size = new System.Drawing.Size(525, 412);
             this.SETTINGS_panel.TabIndex = 31;
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.Font = new System.Drawing.Font("Microsoft YaHei", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label24.Location = new System.Drawing.Point(264, 359);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(88, 26);
+            this.label24.TabIndex = 35;
+            this.label24.Text = "HEIGHT";
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Font = new System.Drawing.Font("Microsoft YaHei", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label23.Location = new System.Drawing.Point(5, 359);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(81, 26);
+            this.label23.TabIndex = 34;
+            this.label23.Text = "WIDTH";
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Font = new System.Drawing.Font("Microsoft YaHei", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label22.Location = new System.Drawing.Point(190, 319);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(139, 31);
+            this.label22.TabIndex = 33;
+            this.label22.Text = "MONITOR";
+            // 
+            // h_textBox
+            // 
+            this.h_textBox.Location = new System.Drawing.Point(358, 365);
+            this.h_textBox.Name = "h_textBox";
+            this.h_textBox.Size = new System.Drawing.Size(100, 20);
+            this.h_textBox.TabIndex = 32;
+            // 
+            // g_textBox
+            // 
+            this.g_textBox.Location = new System.Drawing.Point(92, 365);
+            this.g_textBox.Name = "g_textBox";
+            this.g_textBox.Size = new System.Drawing.Size(100, 20);
+            this.g_textBox.TabIndex = 31;
             // 
             // label14
             // 
@@ -238,19 +298,16 @@
             // 
             // a_comboBox
             // 
-            this.a_comboBox.AutoCompleteCustomSource.AddRange(new string[] {
-            "TIME CACULATION",
-            "ENERMY CACULATION"});
-            this.a_comboBox.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
-            this.a_comboBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.a_comboBox.FormattingEnabled = true;
             this.a_comboBox.Items.AddRange(new object[] {
+            "ENEMY CACULATION",
             "TIME CACULATION",
-            "ENERMY CACULATION"});
+            "Chọn hai cái trên kia, nhìn cc :))"});
             this.a_comboBox.Location = new System.Drawing.Point(296, 295);
             this.a_comboBox.Name = "a_comboBox";
             this.a_comboBox.Size = new System.Drawing.Size(150, 21);
             this.a_comboBox.TabIndex = 20;
+            this.a_comboBox.Text = "ENEMY CACULATION";
             // 
             // label4
             // 
@@ -261,32 +318,6 @@
             this.label4.Size = new System.Drawing.Size(76, 26);
             this.label4.TabIndex = 19;
             this.label4.Text = "SCORE";
-            // 
-            // b_checkBox
-            // 
-            this.b_checkBox.AutoSize = true;
-            this.b_checkBox.Checked = true;
-            this.b_checkBox.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.b_checkBox.Font = new System.Drawing.Font("Microsoft YaHei", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.b_checkBox.Location = new System.Drawing.Point(206, 328);
-            this.b_checkBox.Name = "b_checkBox";
-            this.b_checkBox.Size = new System.Drawing.Size(172, 30);
-            this.b_checkBox.TabIndex = 18;
-            this.b_checkBox.Text = "SKILL\'s ENEMY";
-            this.b_checkBox.UseVisualStyleBackColor = true;
-            // 
-            // a_checkBox
-            // 
-            this.a_checkBox.AutoSize = true;
-            this.a_checkBox.Checked = true;
-            this.a_checkBox.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.a_checkBox.Font = new System.Drawing.Font("Microsoft YaHei", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.a_checkBox.Location = new System.Drawing.Point(10, 328);
-            this.a_checkBox.Name = "a_checkBox";
-            this.a_checkBox.Size = new System.Drawing.Size(157, 30);
-            this.a_checkBox.TabIndex = 17;
-            this.a_checkBox.Text = "SKILL\'s TANK";
-            this.a_checkBox.UseVisualStyleBackColor = true;
             // 
             // c_textBox
             // 
@@ -455,7 +486,7 @@
             // BACKGROUND_picturebox
             // 
             this.BACKGROUND_picturebox.BackColor = System.Drawing.Color.Gray;
-            this.BACKGROUND_picturebox.Image = global::nonamegame.Properties.Resources.unnamed2;
+            this.BACKGROUND_picturebox.Image = ((System.Drawing.Image)(resources.GetObject("BACKGROUND_picturebox.Image")));
             this.BACKGROUND_picturebox.Location = new System.Drawing.Point(0, 0);
             this.BACKGROUND_picturebox.Name = "BACKGROUND_picturebox";
             this.BACKGROUND_picturebox.Size = new System.Drawing.Size(1500, 1000);
@@ -465,6 +496,8 @@
             // CONTROL_panel
             // 
             this.CONTROL_panel.BackColor = System.Drawing.Color.LightSalmon;
+            this.CONTROL_panel.Controls.Add(this.label26);
+            this.CONTROL_panel.Controls.Add(this.label25);
             this.CONTROL_panel.Controls.Add(this.label21);
             this.CONTROL_panel.Controls.Add(this.label20);
             this.CONTROL_panel.Controls.Add(this.label19);
@@ -477,6 +510,36 @@
             this.CONTROL_panel.Name = "CONTROL_panel";
             this.CONTROL_panel.Size = new System.Drawing.Size(512, 392);
             this.CONTROL_panel.TabIndex = 31;
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.Font = new System.Drawing.Font("Microsoft YaHei", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label25.Location = new System.Drawing.Point(23, 289);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(221, 26);
+            this.label25.TabIndex = 10;
+            this.label25.Text = "METEORSHOWER :  Q";
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Font = new System.Drawing.Font("Microsoft YaHei", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label21.Location = new System.Drawing.Point(23, 212);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(334, 26);
+            this.label21.TabIndex = 9;
+            this.label21.Text = "NORMAL_SPEED :  MIDDLE_CLICK";
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Font = new System.Drawing.Font("Microsoft YaHei", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label20.Location = new System.Drawing.Point(23, 248);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(365, 26);
+            this.label20.TabIndex = 8;
+            this.label20.Text = "GOD_EYES :  V (Detect Energy_Block)";
             // 
             // label19
             // 
@@ -538,37 +601,60 @@
             this.label27.TabIndex = 2;
             this.label27.Text = "CONTROL";
             // 
-            // label20
+            // a_pictureBox
             // 
-            this.label20.AutoSize = true;
-            this.label20.Font = new System.Drawing.Font("Microsoft YaHei", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.Location = new System.Drawing.Point(23, 248);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(365, 26);
-            this.label20.TabIndex = 8;
-            this.label20.Text = "GOD_EYES :  V (Detect Energy_Block)";
+            this.a_pictureBox.BackColor = System.Drawing.Color.Transparent;
+            this.a_pictureBox.Location = new System.Drawing.Point(0, 841);
+            this.a_pictureBox.Name = "a_pictureBox";
+            this.a_pictureBox.Size = new System.Drawing.Size(275, 40);
+            this.a_pictureBox.TabIndex = 32;
+            this.a_pictureBox.TabStop = false;
+            this.a_pictureBox.Visible = false;
             // 
-            // label21
+            // c_pictureBox
             // 
-            this.label21.AutoSize = true;
-            this.label21.Font = new System.Drawing.Font("Microsoft YaHei", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.Location = new System.Drawing.Point(23, 210);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(334, 26);
-            this.label21.TabIndex = 9;
-            this.label21.Text = "NORMAL_SPEED :  MIDDLE_CLICK";
+            this.c_pictureBox.BackColor = System.Drawing.Color.Transparent;
+            this.c_pictureBox.Location = new System.Drawing.Point(0, 921);
+            this.c_pictureBox.Name = "c_pictureBox";
+            this.c_pictureBox.Size = new System.Drawing.Size(275, 40);
+            this.c_pictureBox.TabIndex = 33;
+            this.c_pictureBox.TabStop = false;
+            this.c_pictureBox.Visible = false;
+            // 
+            // b_pictureBox
+            // 
+            this.b_pictureBox.BackColor = System.Drawing.Color.Transparent;
+            this.b_pictureBox.Location = new System.Drawing.Point(0, 881);
+            this.b_pictureBox.Name = "b_pictureBox";
+            this.b_pictureBox.Size = new System.Drawing.Size(275, 40);
+            this.b_pictureBox.TabIndex = 34;
+            this.b_pictureBox.TabStop = false;
+            this.b_pictureBox.Visible = false;
+            // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.Font = new System.Drawing.Font("Microsoft YaHei", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label26.Location = new System.Drawing.Point(23, 324);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(250, 26);
+            this.label26.TabIndex = 11;
+            this.label26.Text = "RESTART GAME :  ENTER";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1484, 961);
+            this.Controls.Add(this.SKILL1_label);
+            this.Controls.Add(this.SKILL2_label);
+            this.Controls.Add(this.b_pictureBox);
+            this.Controls.Add(this.c_pictureBox);
+            this.Controls.Add(this.SKILL3_label);
+            this.Controls.Add(this.a_pictureBox);
             this.Controls.Add(this.CONTROL_panel);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.ENERGY_label);
-            this.Controls.Add(this.SKILL3_label);
-            this.Controls.Add(this.SKILL2_label);
-            this.Controls.Add(this.SKILL1_label);
             this.Controls.Add(this.POSITION_label);
             this.Controls.Add(this.SCORE_label);
             this.Controls.Add(this.BACKGROUND_picturebox);
@@ -584,6 +670,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.BACKGROUND_picturebox)).EndInit();
             this.CONTROL_panel.ResumeLayout(false);
             this.CONTROL_panel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.a_pictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.c_pictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.b_pictureBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -610,10 +699,7 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.ComboBox a_comboBox;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.CheckBox b_checkBox;
-        private System.Windows.Forms.CheckBox a_checkBox;
         private System.Windows.Forms.Label OK_label;
         private System.Windows.Forms.Label APPLY_label;
         private System.Windows.Forms.Label CANCEL_label;
@@ -634,6 +720,17 @@
         private System.Windows.Forms.Label label27;
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.TextBox h_textBox;
+        private System.Windows.Forms.TextBox g_textBox;
+        private System.Windows.Forms.Label label24;
+        private System.Windows.Forms.Label label23;
+        private System.Windows.Forms.PictureBox a_pictureBox;
+        private System.Windows.Forms.PictureBox c_pictureBox;
+        private System.Windows.Forms.PictureBox b_pictureBox;
+        private System.Windows.Forms.ComboBox a_comboBox;
+        private System.Windows.Forms.Label label25;
+        private System.Windows.Forms.Label label26;
     }
 }
 
